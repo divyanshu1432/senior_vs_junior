@@ -11,11 +11,11 @@
 
 
 </head>
-<body>
+<body onload="typing()">
 
 <!-- HEADER STARTED HERE --> 
 
-<header class="text-center" style="background-color: #34495e; width: 100vw; height: 20vh;"> <h1 class="text-light text-capitalize d-flex" style=" font-weight: bolder;"> 🏏 JUNIOR vs SENIOR 🏏 </h1> <h5 class="text-danger "> 15/11/2020 (sunday) </h5> </header>
+<header class="text-center" style="background-color: #34495e; width: 100vw; height: 20vh;"> <h1 class="text-light text-capitalize d-flex" style=" font-weight: bolder;"> </h1> <h5 class="text-danger "> 15/11/2020 (sunday) </h5> </header>
 
 <!-- important buttons --> 
 
@@ -118,6 +118,24 @@
 
 
 </section>
+
+
+<script> 
+
+let i = 0 ;
+let text =  '🏏 JUNIOR vs SENIOR 🏏';
+let speed = 150;
+
+function typing(){
+	/*console.log(text);*/
+
+if(i<text.length){
+	document.getElementById('headerr').innerHTML += text.charAt(i);
+	i++;
+setTimeout(typing, speed);}
+
+}
+</script>
 
 
 
