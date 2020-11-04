@@ -83,6 +83,7 @@ img {
 
 .btn{
 	width: auto!important;
+	z-index:1111;
 }
 
 	.important_buttons{
