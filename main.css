@@ -85,5 +85,8 @@ img {
 	width: auto!important;
 }
 
-
+	.important_buttons{
+		width: auto;
+		overflow-x: scroll;
+	}
 }
